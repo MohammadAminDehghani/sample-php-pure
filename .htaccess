@@ -1,0 +1,9 @@
+# Default - Directory listings disabled (mod_autoindex)
+Options ALL -Indexes
+
+RewriteEngine On
+RewriteBase /sample-php-pure/Source%20Files/
+RewriteRule ^index\.php - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]

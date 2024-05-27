@@ -1,0 +1,2 @@
+# Default - Directory listings disabled (mod_autoindex)
+Options -Indexes
